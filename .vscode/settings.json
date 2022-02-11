@@ -1,0 +1,9 @@
+{
+    "emmet.includeLanguages": {
+        "editor.formatOnType": "true",
+        "editor.formatOnSave": "true"
+    },
+    "editor.codeActionsOnSave": null,
+    "prettier.requireConfig": true,
+"editor.formatOnSave": true
+}
