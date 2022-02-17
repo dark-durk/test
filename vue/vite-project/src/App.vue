@@ -1,15 +1,13 @@
 <script lang="ts" setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import Todolist from './components/Todolist.vue'
+import Heading from './components/Heading.jsx'
 </script>
 
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3  Vite" /> -->
-  
+    <Heading :level="2">jsx</Heading>
+    <todolist></todolist>
   <div>
-    <router-link to="/">首页</router-link> | 
+    <router-link to="/">首页</router-link> |
     <router-link to="/about">关于</router-link>
   </div>
   <router-view></router-view>
