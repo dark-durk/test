@@ -3,7 +3,8 @@ import App from './App.vue'
 
 import router from '@/router'
 import store from '@/store'
-
+import { useCssVar ,useDebounce } from '@vueuse/core'
+import { useAxios } from '@vueuse/integrations/useAxios'
 import ELbutton from '@/components/button'
 
 const app = createApp(App)

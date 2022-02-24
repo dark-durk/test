@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-button size="large">df</el-button>
+    <el-button size="large" @click="clickBtn">df</el-button>
   </div>
 </template>
 
@@ -12,7 +12,12 @@ export default defineComponent({
   name:'Todolist',
   setup() {
     const slot=useSlots()
-    console.log(slot)
+    function clickBtn(e){
+      console.log(e)
+    }
+    return {
+      clickBtn
+    }
   }
 })
 </script>

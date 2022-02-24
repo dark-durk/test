@@ -18,10 +18,13 @@ import { isReactive, reactive, ref, shallowRef, triggerRef } from 'vue';
 let { mouse } = useMouse()
 
 const a=useStorage('a',0)
+const b=useStorage('b',{name:'Ming',age:10})
 
 
 function changeFoo(){
   a.value++
+  b.value.age++
+  console.log(typeof b.value.age)
 }
 </script>
 
